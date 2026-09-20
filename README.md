@@ -14,7 +14,7 @@
 
 Watch the official 70-second video demo walkthrough with synchronized voiceover narration showcasing live phishing triage, in-text red flag segmentation, and typosquatting detection:
 
-https://github.com/user-attachments/assets/scamshield-demo-pitch
+https://github.com/Anurag-M1/ScamShield/releases/download/v1.0.0/scamshield_demo_pitch.mp4
 
 > 🎥 **Direct Video File**: [`scamshield_demo_pitch.mp4`](scamshield_demo_pitch.mp4) (1080p HD, 3.2 MB)  
 > 🌐 **Interactive Web Player**: Launch [`pitch_deck.html`](pitch_deck.html) in any web browser.
