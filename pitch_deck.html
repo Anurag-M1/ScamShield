@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ScamShield — Hackathon Pitch & Video Showcase</title>
+  <style>
+    :root {
+      --bg-dark: #070a12;
+      --bg-card: #0e1526;
+      --cyan: #06b6d4;
+      --cyan-glow: rgba(6, 182, 212, 0.4);
+      --red: #ef4444;
+      --green: #10b981;
+      --text: #f1f5f9;
+      --text-muted: #94a3b8;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: var(--bg-dark);
+      color: var(--text);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 20px;
+    }
+    .container {
+      max-width: 1000px;
+      width: 100%;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #fff;
+    }
+    h1 span {
+      color: var(--cyan);
+      text-shadow: 0 0 16px var(--cyan-glow);
+    }
+    p.subtitle {
+      color: var(--text-muted);
+      margin-top: 6px;
+      font-size: 0.95rem;
+    }
+    .video-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+      margin-bottom: 24px;
+    }
+    video {
+      width: 100%;
+      border-radius: 12px;
+      outline: none;
+      display: block;
+      background: #000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    }
+    .controls-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn {
+      background: linear-gradient(135deg, var(--cyan), #2563eb);
+      color: #fff;
+      font-weight: 600;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: none;
+      cursor: pointer;
+      font-size: 0.88rem;
+    }
+    .btn-secondary {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+    }
+    .btn:hover { filter: brightness(1.15); transform: translateY(-1px); }
+    .script-box {
+      background: var(--bg-card);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 16px;
+      padding: 24px;
+      margin-top: 20px;
+    }
+    .script-box h3 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--cyan);
+    }
+    .scene-entry {
+      margin-bottom: 14px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+    }
+    .scene-entry:last-child { border: none; margin: 0; padding: 0; }
+    .scene-entry strong { color: #38bdf8; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Scam<span>Shield</span> Pitch Demo Video</h1>
+      <p class="subtitle">Cybersecurity Hackathon 2026 • Real-Time Phishing & Social Engineering Defense</p>
+    </header>
+
+    <div class="video-card">
+      <video controls autoplay loop playsinline>
+        <source src="scamshield_demo_pitch.mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+      </video>
+
+      <div class="controls-row">
+        <a href="scamshield_demo_pitch.mp4" download="ScamShield_Demo_Pitch.mp4" class="btn">
+          ⬇️ Download Video (MP4)
+        </a>
+        <a href="index.html" class="btn btn-secondary">
+          🛡️ Launch Live ScamShield Web App
+        </a>
+      </div>
+    </div>
+
+    <div class="script-box">
+      <h3>🎙️ Synchronized Voiceover & Pitch Transcript (70s)</h3>
+      
+      <div class="scene-entry">
+        <strong>Scene 1: The Problem (0:00 - 0:14)</strong>
+        <p>"Every day, millions of people receive deceptive SMS alerts, fake courier fees, and digital arrest extortion threats. Phishing causes billions in losses, and most victims can't spot the subtle red flags until it is too late."</p>
+      </div>
+
+      <div class="scene-entry">
+        <strong>Scene 2: Introducing ScamShield (0:14 - 0:27)</strong>
+        <p>"Meet ScamShield, an instant, 100 percent client-side phishing and scam intelligence engine built for rapid triage. It requires zero setup, zero APIs, and never uploads your private data to any server."</p>
+      </div>
+
+      <div class="scene-entry">
+        <strong>Scene 3: Live Detection Walkthrough: Fake Bank KYC (0:27 - 0:45)</strong>
+        <p>"Watch it in action. When analyzing a fake bank KYC message, ScamShield computes a risk score of 100 out of 100. It highlights the exact triggers inside the text: urgency pressure, NetBanking and OTP harvesting, and an impersonated domain on a suspicious dot-xyz extension."</p>
+      </div>
+
+      <div class="scene-entry">
+        <strong>Scene 4: Algorithmic Intelligence & Typosquatting (0:45 - 0:58)</strong>
+        <p>"Using Levenshtein distance heuristics across major brand registries, ScamShield catches lookalike typosquatted domains like pay-pa-one dot com, and homoglyph character substitutions before credentials are stolen."</p>
+      </div>
+
+      <div class="scene-entry">
+        <strong>Scene 5: Action Checklist, Triage Report & Conclusion (0:58 - 1:10)</strong>
+        <p>"Victims receive an immediate step-by-step action checklist to freeze bank accounts, block senders, and copy a one-click triage report. Protect everyone, everywhere, instantly. This is ScamShield."</p>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
